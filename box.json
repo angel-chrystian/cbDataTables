@@ -1,0 +1,36 @@
+{
+    "name":"cbDataTables",
+    "version":"0.0.0",
+    "author":"",
+    "location":"angel-chrystian/cbDataTables#v0.0.0",
+    "homepage":"https://github.com/angel-chrystian/cbDataTables",
+    "documentation":"https://github.com/angel-chrystian/cbDataTables",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/angel-chrystian/cbDataTables"
+    },
+    "bugs":"https://github.com/angel-chrystian/cbDataTables/issues",
+    "slug":"cbDataTables",
+    "shortDescription":"Creates jQuery DataTables enabled grids from ORM entities",
+    "description":"Creates jQuery DataTables enabled grids from ORM entities",
+    "type":"modules",
+    "dependencies":{},
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests/resources/app/coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='angel-chrystian/cbDataTables#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
